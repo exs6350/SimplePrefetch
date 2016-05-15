@@ -2,8 +2,8 @@
 //File: includes.h
 //Description: Contains all the headers and constants 
 
-#ifndef _INCLUDES_H
-#define _INCLUDES_H
+#ifndef _INCLUDE_H
+#define _INCLUDE_H
 
 #include <cstdlib>
 #include <stdio.h>
@@ -12,7 +12,7 @@
 #include <Counter.h>
 #include <BusALU.h>
 #include <Clock.h>
-#include <Bus.H>
+#include <Bus.h>
 #include <Memory.h>
 #include <Clearable.h>
 
@@ -42,5 +42,7 @@ extern Counter s2;
 extern Clearable s3;
 
 void setup();
-
+long compute_address();
+void add_sub_instruction(bool add);
+void store();
 #endif
